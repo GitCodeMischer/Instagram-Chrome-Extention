@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <meta charset=utf-8>
+</head>
+
+<!-- warning Message Info-->
+<div id="container">
+  <div id="error-box">
+    <img id="warningicon" src="../../icons/infoicon.png"></img>
+    <div class="message"><h1 class="alert">Warning!</h1><p class="warningmessage">Move To instagram.com to get Valuable Informations</div>
+    	<a href="https://www.instagram.com/api_clouddev_official/" target="_blank">
+    		<button class="button-box">
+    			<h1 class="red">Go To Instagram</h1>
+    		</button>
+    	</a>
+  </div>
+</div>
+
+<div class="content">
+    <div class="mainInfo">
+        <h1>CloudInstagram Info</h1>
+        <span id="username">empty</span>
+        <div class="profileImg">
+            <img id="userimage" src="../../icons/icon128.png" alt="profilimage" width="150"></img>
+        </div>
+        <div class="aboutMe">
+            <h3>Profil Description</h3>
+            <p id="profildesc">empty</p>
+            <div class="importantInfo">
+	            <p id="userfollows"></p>
+	            <p id="userposts"></p>
+        	</div>
+        </div>
+    </div>
+    <div class="clearFix"></div>
+
+    <div class="accordion">
+        <div class="accordion__item">
+            <h3 class="accordion__title js-title">Profil Informations</h3>
+            <ul class="playerStats accordion__copy js-copy">
+                <span>Business Category:</span>
+	                <li id="businesscatname">
+	                    empty
+	                </li>
+                <span>Private Account:</span>
+	                <li id="privateacc">
+	                    empty
+	                </li>
+                <span>Business Account:</span>
+	                <li id="businessacc">
+	                    empty
+	                </li>
+                <span>Verified Account:</span>
+	                <li id="verifiedacc">
+	                    empty
+	                </li>
+            </ul>
+        </div>
+
+        <div class="accordion__item">
+            <h3 class="accordion__title js-title">Highlight Story</h3>
+            <ul class="playerStats accordion__copy js-copy">
+                <span>Highlight Titles:</span>
+	                <li class="textareali_large">
+	                	<textarea id="highlgttitle" class="textareaformat_large">
+	                	</textarea>
+	                </li>
+	            <span>Highlight Thumbnail:</span>
+	                <li class="textareali_small">
+	                	<textarea id="highlgtthumbnailsrc" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+                <span>Highlight Length:</span>
+	                <li id="Highlightlength">
+	                    empty
+	                </li>
+            </ul>
+        </div>
+
+        <div class="accordion__item">
+            <h3 class="accordion__title js-title">Current Story</h3>
+            <ul class="playerStats accordion__copy js-copy">
+                <span>CurrentStory URL:</span>
+	                <li class="textareali_small">
+	                	<textarea id="currimgurl" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+                <span>CurrentStory Expired:</span>
+	                <li class="textareali_small">
+	                	<textarea id="currexpiered" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+                <span>CurrentStory Created:</span>
+	                <li class="textareali_small">
+	                	<textarea id="currcreated" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+                <span>CurrentStory Length:</span>
+	                <li id="currlength">
+	                    empty
+	                </li>
+            </ul>
+        </div>
+
+        <div class="accordion__item">
+            <h3 class="accordion__title js-title">Top 50 Newest Images</h3>
+            <ul class="playerStats accordion__copy js-copy">
+                <span >Summary Likes:</span>
+	                <li id="summlikes">
+	                    empty
+	                </li>
+                <span >Summary Comments:</span>
+	                <li id="summcomments">
+	                    empty
+	                </li>
+	            <span >Summary Videos:</span>
+	                <li id="summvideos">
+	                    empty
+	                </li>
+	            <span >Summary Images:</span>
+	                <li id="summimages">
+	                    empty
+	                </li>
+	            <span >Created At:</span>
+	                <li class="textareali_small">
+	                	<textarea id="createdat" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+            </ul>
+        </div>
+
+        <div class="accordion__item">
+            <h3 class="accordion__title js-title">Extra Informations</h3>
+            <ul class="playerStats accordion__copy js-copy">
+            	<span >Used Hashtags:</span>
+	                <li class="textareali_small">
+	                	<textarea id="usedhashtag" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+                <span >People mentioned:</span>
+	                <li class="textareali_small">
+	                	<textarea id="peoplementioned" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+	            <span >User Locations:</span>
+	                <li class="textareali_small">
+	                	<textarea id="location" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+	            <span >Image URLs:</span>
+	                <li class="textareali_small">
+	                	<textarea id="imageurl" class="textareaformat_small">
+	                	</textarea>
+	                </li>
+	            <span >Images View:</span>
+				   <p id="imageview"></p>
+            </ul>
+        </div>
+        <div class="creatorprofile">
+    	<a title="Instagram profile of api_clouddev_official" 
+	    	href="https://www.instagram.com/api_clouddev_official/" 
+	    	target="_blank">
+    		<img src="https://img.icons8.com/doodle/48/000000/instagram-new.png">
+    	</a>
+    </div>
+   </div>
+
+    <body>
+        <script src="../../js/jquery.min.js"></script>
+        <script type="text/javascript" src="tabbedpanelogic.js"></script>
+        <script type="text/javascript" src="background.js"></script>
+    </body>
+</html>

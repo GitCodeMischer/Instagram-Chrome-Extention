@@ -1,0 +1,393 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #222222;
+}
+
+.content {
+  min-width: 782px;
+  /*alt 800px min-with*/
+  width: 60%;
+  max-width: 1200px;
+  height: 795px;
+  background: #222;
+  border-radius: 6px;
+}
+
+.stats {
+  height: 200px;
+}
+
+.col {
+  width: 33.33%;
+  height: 200px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+
+.middle:before,
+.middle:after {
+  content: "";
+  height: 80%;
+  border: 1px solid #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.middle:before {
+  left: 0;
+}
+
+.middle:after {
+  right: 0;
+}
+
+.matchStats {
+  float: right;
+  width: 300px;
+  height: 240px;
+  position: relative;
+}
+
+#gameStats,
+#roleStats {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+}
+
+#champData {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -10px;
+  margin: auto;
+}
+
+#timeData {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mainInfo {
+  height: 240px;
+  padding: 20px;
+  width: calc(100% - 300px);
+  float: left;
+}
+
+.mainInfo span {
+  color: #999;
+  font-size: 25px;
+}
+
+.mainInfo .aboutMe {
+  font-size: 14px;
+  color: #999;
+}
+
+.profileImg {
+  margin-left: 118%;
+  margin-top: -9%;
+  margin-bottom: -25%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #FDB45C;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+
+h3 {
+  display: block;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 2px solid #333;
+  color: #FDB45C;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.clearFix {
+  clear: both;
+}
+
+.playerStats {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  margin: 6px;
+  font-size: 15px;
+}
+
+.playerStats li {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  margin-top: -3.8%;
+  margin-left: 21%;
+}
+
+.playerStats li span {
+  display: inline-block;
+  width: 70%;
+  color: #999;
+}
+
+.backgroundText {
+  width: 100%;
+  height: 100%;
+  font-size: 56px;
+  color: rgba(255, 255, 255, 0.2);
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.resizing {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.donut-hole {
+  fill: #222222;
+}
+
+.donut-ring {
+  stroke: black;
+}
+
+.donut-segment {
+  stroke: #c59144;
+}
+
+.importantInfo{
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fdb45c;
+  margin-top: -23%;
+  margin-left: 60%;
+}
+
+/*.verifiedBadge{
+    background-image: url("../../icons/instagram_icons.png");
+    background-position: -383px -238px;
+    height: 18px;
+    width: 18px;
+    padding-left: 3%;
+}*/
+
+.textareaformat_large{
+  max-width: 552px;
+  width:552px;
+  height: 100px;
+  border:0; 
+  outline:0;
+  padding: 1em;
+  border-radius:8px;
+  display: block;
+  margin-top: 0.5em;
+  resize: none;
+}
+
+.textareaformat_small{
+  max-width: 552px;
+  width:552px;
+  height: 60px;
+  border:0; 
+  outline:0;
+  padding: 1em;
+  border-radius:8px;
+  display: block;
+  margin-top: 0.5em;
+  resize: none;
+}
+
+.textareaformat:focus{
+  box-shadow: 0px 2px #d92248;
+}
+
+.textareali_large{
+  margin-bottom: 12%;
+}
+
+.textareali_small{
+  margin-bottom: 6%;
+}
+
+.creatorprofile{
+  margin-left: 94%;
+}
+
+#profildesc{
+  margin-right: 42%;
+}
+
+.WarningBox{
+  font-size: 28px;
+  color: white;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 15%;
+}
+
+/*
+Accordion Show Details
+*/
+
+.accordion {
+  margin: 5rem auto;
+  width: 90%;
+
+}
+
+.accordion__title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+  background: #d92248;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.accordion__title:hover {
+  background: #FDB45C;
+}
+
+.accordion__copy {
+  display: none;
+  /*padding: 1rem 1.5rem 2rem 1.5rem;*/
+  color: gray;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.accordion__copy--open {
+  display: block;
+}
+
+/*Warning Message Output*/
+
+ #container {
+     position: relative;
+     margin: auto;
+     margin-right: -12%;
+     overflow: hidden;
+     width: 455px;
+     height: 250px;
+     display:none;
+  }
+
+  #error-box {
+     position: absolute;
+     width: 400px;
+     height: 100%;
+     right: 12%;
+     background-image: linear-gradient(#d92248, #fdb45c, #222222);
+     border-radius: 20px;
+     box-shadow: 5px 5px 20px rgba(203, 205, 211, 10);
+  }
+
+  .message {
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   height: 40%;
+   top: 31%;
+}
+
+ .alert {
+   font-weight: 700;
+   letter-spacing: 5px;
+}
+
+ .button-box {
+   position: absolute;
+   background: #fcfcfc;
+   width: 50%;
+   height: 15%;
+   border-radius: 20px;
+   top: 73%;
+   left: 25%;
+   outline: 0;
+   border: none;
+   transition: all 0.5s ease-in-out;
+}
+ .button-box:hover {
+   background: #efefef;
+   transform: scale(1.05);
+   transition: all 0.3s ease-in-out;
+   cursor:pointer;
+}
+
+ .red {
+   color: #d92248;
+   font-size: 15px;
+  }
+
+#warningicon{
+  margin-top: 6%;
+  margin-left: 45%;
+  width: 45px;
+  border-radius: 0px;
+}
+
+.warningmessage{
+    font-size: 16px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.imgradius-none{
+  border-radius: 0%;
+}

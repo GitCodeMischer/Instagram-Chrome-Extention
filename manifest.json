@@ -1,0 +1,42 @@
+{
+  "name": "Instagram Extended Info",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Show user more informations about someones Instagram Profile",
+  "homepage_url": "https://www.instagram.com/api_clouddev_official/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "InstaExtInfo",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "https://www.instagram.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "src/content_script/contentstyle.css"
+      ]
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content_script/contentscript.js"
+      ]
+    }
+  ]
+}
